@@ -1,0 +1,51 @@
+.container {
+  background-color: #007bb5;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  font-family: sans-serif;
+}
+
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.option {
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  width: 45%;
+  color: black;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+
+.option:hover {
+  background-color: #f0f0f0;
+}
+
+.option.selected {
+  background-color: #b3d9ff;
+}
+
+.left {
+  margin-right: auto;
+}
+
+.right {
+  margin-left: auto;
+}
+
+label {
+  display: block;
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  display: none;
+}
+

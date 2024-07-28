@@ -1,0 +1,11 @@
+<div class="container">
+  <h3>{{ question }}</h3>
+  <div class="options">
+    <div class="option" *ngFor="let option of departements; let i = index" [class.left]="i % 2 === 0" [class.right]="i % 2 !== 0">
+      <label>
+        <input type="radio" name="answer" [value]="option" (change)="selectOption(option)">
+        {{ option }}
+      </label>
+    </div>
+  </div>
+</div>
