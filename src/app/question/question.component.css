@@ -1,27 +1,36 @@
-.container {
-  background-color: #007bb5;
-  border-radius: 10px;
+.question-container {
+  background-color: rgba(0, 123, 181, 0.8); /* Fond bleu avec transparence */
+  padding: 20px;
   text-align: center;
   color: white;
   font-family: sans-serif;
+  position: absolute; /* Positionnement absolu pour être en bas de la page */
+  bottom: 0; /* Positionne le composant en bas */
+  left: 0; /* Aligne le composant avec le bord gauche */
+  width: 100%; /* Prend toute la largeur */
+  box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur totale */
+  z-index: 1000; /* Assure que le composant est au-dessus de la carte */
 }
 
 .options {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around; /* Répartition uniforme des options */
 }
 
 .option {
   background-color: #ffffff;
-  border: 1px solid #cccccc;
   border-radius: 5px;
   margin: 10px;
   padding: 10px;
-  width: 45%;
+  flex: 1 1 45%; /* Permet aux options de s'adapter et de s'étendre */
   color: black;
   font-family: sans-serif;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease; /* Transition pour l'effet hover */
 }
 
 .option:hover {
@@ -32,20 +41,13 @@
   background-color: #b3d9ff;
 }
 
-.left {
-  margin-right: auto;
-}
-
-.right {
-  margin-left: auto;
-}
-
 label {
   display: block;
   cursor: pointer;
+  width: 100%;
+  text-align: center;
 }
 
 input[type="radio"] {
   display: none;
 }
-
