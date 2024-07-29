@@ -22,7 +22,7 @@ export class MapComponent implements OnInit {
   }
 
   private initMap(): void {
-    this.map = L.map('map').setView([46.603354, 1.888334], 5);
+    this.map = L.map('map', {zoomControl:false}).setView([48, 1.3], 5);
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
